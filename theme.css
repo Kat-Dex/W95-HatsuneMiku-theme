@@ -51,6 +51,9 @@ settings:
         - 
           label: Reactionary
           value: w95-reactionary
+        -
+          label: Hatsune Miku
+          value: w95-hatsunemiku
 */
 
 .theme-dark,
@@ -68,6 +71,17 @@ settings:
   --text-normal: #181612;
   --nav-item-background-active: #3a6ea5;
   --nav-item-color-active: var(--accent-1);
+}
+
+.theme-dark.w95-hatsunemiku,
+.theme-light.w95-hatsunemiku {
+  --background-primary: #137a7f;
+  --background-secondary: #137a7f;
+  --nav-item-background-active: #e12885;
+  --nav-item-color-active: #bec8d1;
+  --header-color: #e12885;
+  --background-editor-primary: #86cecb;
+  --icon-color: #bec8d1;
 }
 
 .theme-dark,
