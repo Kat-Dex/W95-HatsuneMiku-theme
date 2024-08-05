@@ -75,13 +75,32 @@ settings:
 
 .theme-dark.w95-hatsunemiku,
 .theme-light.w95-hatsunemiku {
-  --background-primary: #137a7f;
-  --background-secondary: #137a7f;
+  --background-primary: #00ADB5;
+  --background-secondary: #00ADB5;
   --nav-item-background-active: #e12885;
   --nav-item-color-active: #bec8d1;
   --header-color: #e12885;
   --background-editor-primary: #86cecb;
-  --icon-color: #bec8d1;
+  --icon-color: #e12885;
+  --link-color: #e12885;
+  --nav-files-background: #373b3e;
+  --nav-item-color: #bec8d1;
+}
+
+.theme-dark.w95-hatsunemiku .markdown-source-view {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  /* I have provided the watermark image in the repo as mikubg.png in case the image link goes down. You will have to host it on a server to get the URL (like XAMPP, for example). */
+  background-image: url('https://orig00.deviantart.net/9a52/f/2017/024/e/d/hatsune_miku___vocaloid_minimalism_black_by_carionto-dawlodv.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: 0;
 }
 
 .theme-dark,
