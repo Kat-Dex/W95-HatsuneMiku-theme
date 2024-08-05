@@ -87,7 +87,7 @@ settings:
   --nav-item-color: #bec8d1;
 }
 
-.theme-dark.w95-hatsunemiku .markdown-source-view {
+.theme-dark.w95-hatsunemiku .markdown-source-view::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -101,6 +101,11 @@ settings:
   background-repeat: no-repeat;
   opacity: 0.1;
   z-index: 0;
+}
+
+.theme-dark.w95-hatsunemiku .markdown-source-view {
+  position: relative;
+  overflow: hidden;
 }
 
 .theme-dark,
